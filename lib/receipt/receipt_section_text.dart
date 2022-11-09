@@ -25,27 +25,15 @@ class ReceiptSectionText {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECEIPT</title>
-    <style type="text/css">
-        div{border:solid 1px gray;}
-        #mainDiv
-        {
-            width:300px; 
-            overflow:auto;
-        }
-        .float
-        {
-            float:left;
-            width:50%;
-        }
-        </style>
 </head>
 
 ${CollectionStyle.all}
 
 <body>
-  <div id="mainDiv" class="receipt">
-    <div id="mainDiv" class="container">
+  <div class="receipt">
+    <div class="container">
       <!-- testing part -->
+      v.0.0.1
       
       $_data
       
