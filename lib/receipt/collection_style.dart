@@ -15,11 +15,11 @@ class CollectionStyle {
           body {
               background: #eee;
               width: 586px;
-              font-size: 1.8em
+              font-size: 1.3em
           }
           
           .receipt {
-              max-width: 576px;
+              max-width: 586px;
               margin: auto;
               background: white;
           }
