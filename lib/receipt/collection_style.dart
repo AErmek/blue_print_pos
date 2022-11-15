@@ -14,7 +14,7 @@ class CollectionStyle {
           
           body {
               background: #eee;
-              width: 576px;
+              width: 586px;
               font-size: 1.8em
           }
           
@@ -79,6 +79,8 @@ class CollectionStyle {
           
           .text-medium {
               font-size: 1.3em;
+              text-align: justify;
+              display: inline-block;
           }
           
           .text-small {
