@@ -78,7 +78,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 1.2em;
+              font-size: 1.3em;
           }
           
           .text-small {
