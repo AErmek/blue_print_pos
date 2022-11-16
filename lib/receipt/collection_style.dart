@@ -15,7 +15,7 @@ class CollectionStyle {
           body {
               background: #eee;
               width: 586px;
-              font-size: 18px;
+              font-size: 25px;
               margin: 0px;
               padding: 0px;
           }
@@ -27,7 +27,8 @@ class CollectionStyle {
           }
           
           .container {
-              padding: 5px 5px;
+              margin: 0px;
+              padding: 0px;
           }
           
           hr {
@@ -80,7 +81,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 18px;
+              font-size: 25px;
               text-align: justify;
               display: inline-block;
           }
