@@ -22,7 +22,7 @@ class CollectionStyle {
           
           .receipt {
               max-width: 586px;
-              margin: 10px;
+              margin: 0px;
               background: white;
           }
           
