@@ -15,7 +15,7 @@ class CollectionStyle {
           body {
               background: #eee;
               width: 586px;
-              font-size: 28px;
+              font-size: 26px;
               margin: 0px;
               padding: 0px;
               text-align: justify;  
@@ -24,7 +24,7 @@ class CollectionStyle {
           .receipt {
               max-width: 586px;
               margin: 0px;
-              padding: 5px;
+              padding: 0px;
               background: white;
           }
           
@@ -83,7 +83,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 28px;
+              font-size: 26px;
               text-align: justify;
               border: 1px solid blue;
           }
