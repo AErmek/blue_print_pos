@@ -16,7 +16,8 @@ class CollectionStyle {
               background: #eee;
               width: 586px;
               font-size: 1.6em;
-              margin: 0;
+              margin: 0px;
+              padding: 0px;
           }
           
           .receipt {

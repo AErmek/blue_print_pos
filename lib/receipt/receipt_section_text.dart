@@ -33,7 +33,7 @@ ${CollectionStyle.all}
   <div class="receipt">
     <div class="container">
       <!-- testing part -->
-      v.0.0.12
+      v.0.0.13
       
       $_data
       
