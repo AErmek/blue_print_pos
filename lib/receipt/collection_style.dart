@@ -15,7 +15,7 @@ class CollectionStyle {
           body {
               background: #eee;
               width: 586px;
-              font-size: 1.6em;
+              font-size: 18px;
               margin: 0px;
               padding: 0px;
           }
@@ -80,7 +80,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 1.3em;
+              font-size: 18px;
               text-align: justify;
               display: inline-block;
           }
