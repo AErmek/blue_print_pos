@@ -19,7 +19,7 @@ class ReceiptText {
   final ReceiptAlignment alignment;
 
   String get html => '''
-    <pre class="${textStyle.textSizeHtml}">$text</pre>
+    <pre class="$_alignmentStyleHTML ${textStyle.textSizeHtml}">$text</pre>
     ''';
 
   String get _alignmentStyleHTML {

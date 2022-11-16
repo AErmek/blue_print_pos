@@ -82,7 +82,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 25px;
+              font-size: 28px;
               text-align: justify;
               border: 1px solid blue;
           }
