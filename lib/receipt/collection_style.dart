@@ -83,7 +83,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 26px;
+              font-size: 30px;
               text-align: justify;
           }
           
