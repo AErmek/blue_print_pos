@@ -15,15 +15,10 @@ class CollectionStyle {
           body {
               background: #eee;
               width: 586px;
-              font-size: 30px;
+              font-size: 36px;
               margin: 0px;
               padding: 0px;
               text-align: justify; 
-          }
-          
-          pre {
-              margin: 0px;
-              padding: 0px;
           }
           
           .receipt {
@@ -88,7 +83,7 @@ class CollectionStyle {
           }
           
           .text-medium {
-              font-size: 30px;
+              font-size: 26px;
               text-align: justify;
           }
           
