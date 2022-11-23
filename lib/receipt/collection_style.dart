@@ -22,6 +22,11 @@ class CollectionStyle {
               line-height: 0.3; 
           }
           
+          pre {
+              margin: 0px;
+              padding: 0px;
+          }
+          
           .receipt {
               max-width: 586px;
               margin: 0px;
