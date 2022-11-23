@@ -16,9 +16,9 @@ class CollectionStyle {
               background: #eee;
               width: 576px;
               font-size: 36px;
-              margin: 0px;
-              padding: 0px;
-              text-align: justify; 
+              /*margin: 0px;*/
+              /*padding: 0px;*/
+              /*text-align: justify;*/
           }
           
           pre {
