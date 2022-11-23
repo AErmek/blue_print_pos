@@ -18,7 +18,8 @@ class CollectionStyle {
               font-size: 26px;
               margin: 0px;
               padding: 0px;
-              text-align: justify;  
+              text-align: justify; 
+              line-height: 0.5; 
           }
           
           .receipt {
@@ -89,11 +90,6 @@ class CollectionStyle {
           
           .text-small {
               font-size: 0.8em;
-          }
-          
-          pre 
-          {
-              display: inline;
           }
       </style>
     ''';
