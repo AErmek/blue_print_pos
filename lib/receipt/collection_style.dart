@@ -90,6 +90,11 @@ class CollectionStyle {
           .text-small {
               font-size: 0.8em;
           }
+          
+          pre 
+          {
+              display: inline;
+          }
       </style>
     ''';
   }
