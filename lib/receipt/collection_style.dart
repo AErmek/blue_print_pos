@@ -21,6 +21,11 @@ class CollectionStyle {
               text-align: justify; 
           }
           
+          pre {
+              margin: 0px;
+              padding: 0px;
+          }
+          
           .receipt {
               max-width: 586px;
               margin: 0px;
@@ -84,7 +89,6 @@ class CollectionStyle {
           
           .text-medium {
               font-size: 1.em;
-              text-align: justify;
           }
           
           .text-small {
