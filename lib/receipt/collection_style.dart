@@ -14,7 +14,7 @@ class CollectionStyle {
           
           body {
               background: #eee;
-              width: 586px;
+              width: 576px;
               font-size: 36px;
               margin: 0px;
               padding: 0px;
