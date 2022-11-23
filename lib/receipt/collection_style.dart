@@ -19,7 +19,7 @@ class CollectionStyle {
               margin: 0px;
               padding: 0px;
               text-align: justify; 
-              line-height: 0.5; 
+              line-height: 0.3; 
           }
           
           .receipt {
