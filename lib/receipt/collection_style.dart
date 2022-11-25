@@ -9,8 +9,8 @@ class CollectionStyle {
           p {
               margin: 0px;
               padding: 0px;
-              /*font-family: helvetica;*/
-              font-family: 'Roboto Mono';
+              font-family: helvetica;
+              /*font-family: 'Roboto Mono';*/
           }
           
           body {
@@ -75,8 +75,8 @@ class CollectionStyle {
           
           span {
               color: black;
-              /*font-family: helvetica;*/
-              font-family: 'Roboto Mono';
+              font-family: helvetica;
+              /*font-family: 'Roboto Mono';*/
           }
           
           .full-width {
