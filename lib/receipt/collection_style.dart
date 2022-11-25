@@ -10,12 +10,13 @@ class CollectionStyle {
               margin: 0px;
               padding: 0px;
               /*font-family: helvetica;*/
+              font-family: 'Roboto Mono';
           }
           
           body {
               background: #eee;
               width: 586px;
-              font-family: Roboto Mono;
+              /*font-family: Roboto Mono;*/
               font-size: 36px;
               /*margin: 0px;*/
               /*padding: 0px;*/
@@ -75,6 +76,7 @@ class CollectionStyle {
           span {
               color: black;
               /*font-family: helvetica;*/
+              font-family: 'Roboto Mono';
           }
           
           .full-width {
