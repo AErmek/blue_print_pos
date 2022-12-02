@@ -211,6 +211,38 @@ class BluePrintPos {
       print('$runtimeType - Error $error');
     }
   }
+  
+  /// public write buffer method
+  Future<void> writeBuffer(List<int> byteBuffer) async {
+    try {
+      if (selectedDevice == null) {
+        print('$runtimeType - Device not selected');
+        return Future<void>.value(null);
+      }
+      if (!_isConnected && selectedDevice != null) {
+        await connect(selectedDevice!);
+      }
+      if (Platform.isAndroid) {
+        _bluetoothAndroid?.writeBytes(Uint8List.fromList(byteBuffer));
+      } else if (Platform.isIOS) {
+        final List<flutter_blue.BluetoothService> bluetoothServices =
+            await _bluetoothDeviceIOS?.discoverServices() ??
+                <flutter_blue.BluetoothService>[];
+        final flutter_blue.BluetoothService bluetoothService =
+            bluetoothServices.firstWhere(
+          (flutter_blue.BluetoothService service) => service.isPrimary,
+        );
+        final flutter_blue.BluetoothCharacteristic characteristic =
+            bluetoothService.characteristics.firstWhere(
+          (flutter_blue.BluetoothCharacteristic bluetoothCharacteristic) =>
+              bluetoothCharacteristic.properties.write,
+        );
+        await characteristic.write(byteBuffer, withoutResponse: true);
+      }
+    } on Exception catch (error) {
+      print('$runtimeType - Error $error');
+    }
+  }
 
   /// This method to convert byte from [data] into as image canvas.
   /// It will automatically set width and height based [paperSize].
