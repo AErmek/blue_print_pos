@@ -1,6 +1,5 @@
 import 'dart:developer';
 import 'dart:io';
-import 'dart:typed_data';
 import 'dart:ui';
 
 import 'package:blue_print_pos/models/models.dart';
@@ -211,7 +210,7 @@ class BluePrintPos {
       print('$runtimeType - Error $error');
     }
   }
-  
+
   /// public write buffer method
   Future<void> writeBuffer(List<int> byteBuffer) async {
     try {
