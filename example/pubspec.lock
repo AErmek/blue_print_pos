@@ -27,7 +27,7 @@ packages:
     description:
       path: "."
       ref: simple
-      resolved-ref: "36f98ce143ed9c1544a4de14cf8c34a9b069ae38"
+      resolved-ref: aff9638b3b77c50b00daa0f947d844e85dc268d8
       url: "https://github.com/AErmek/blue_thermal_printer.git"
     source: git
     version: "1.2.3"
