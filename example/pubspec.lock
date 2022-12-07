@@ -25,9 +25,11 @@ packages:
   blue_thermal_printer:
     dependency: transitive
     description:
-      name: blue_thermal_printer
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: master
+      resolved-ref: fb8a470a9001632cdff9b9fcdc2c941d973d9dbd
+      url: "https://github.com/FZFR/blue_thermal_printer.git"
+    source: git
     version: "1.2.3"
   boolean_selector:
     dependency: transitive

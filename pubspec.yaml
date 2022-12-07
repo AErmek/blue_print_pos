@@ -9,7 +9,12 @@ environment:
 
 dependencies:
   # Handler bluetooth for Android
-  blue_thermal_printer: ^1.2.3
+  # blue_thermal_printer: ^1.2.3
+  blue_thermal_printer:
+    git:
+      # url: https://github.com/zloykurd/blue_print_pos.git
+      url: https://github.com/FZFR/blue_thermal_printer.git
+      ref: master
   # Utilities for generate ByteBuffer
   esc_pos_utils_plus: ^2.0.1+6
   # Framework
