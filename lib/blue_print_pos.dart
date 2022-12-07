@@ -95,7 +95,8 @@ class BluePrintPos {
               <flutter_blue.BluetoothService>[];
       final flutter_blue.BluetoothService bluetoothService =
           bluetoothServices.firstWhere(
-        (flutter_blue.BluetoothService service) => service.isPrimary,
+        (flutter_blue.BluetoothService service) =>
+            service.deviceId.id == (selectedDevice?.address ?? ''),
       );
       final flutter_blue.BluetoothCharacteristic characteristic =
           bluetoothService.characteristics.firstWhere(
