@@ -1,1 +1,0 @@
-enum ReceiptTextStyleType { normal, bold }
