@@ -55,7 +55,7 @@ class BluePrintPos {
         return bluetoothDevice.id == _bluetoothDeviceIOS?.id;
       });
       if (deviceConnectedIndex < 0) {
-        await _bluetoothDeviceIOS?.connect();
+        await _bluetoothDeviceIOS?.connect(timeout: timeout);
       }
 
       _isConnected = true;
