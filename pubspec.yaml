@@ -1,6 +1,7 @@
 name: blue_print_pos
 description: Plugin to connecting bluetooth printer device, support on Android and iOS
 version: 0.0.15
+publish_to: none
 homepage: https://github.com/andriyoganp/blue_print_pos
 
 environment:
@@ -9,7 +10,13 @@ environment:
 
 dependencies:
   # Handler bluetooth for Android
-  blue_thermal_printer: ^1.2.3
+  blue_thermal_printer:
+    git:
+      # url: https://github.com/zloykurd/blue_print_pos.git
+      # ref: master
+      url: https://github.com/AErmek/blue_thermal_printer.git
+      ref: simple
+  #  blue_thermal_printer: ^1.2.3
   # Utilities for generate ByteBuffer
   esc_pos_utils_plus: ^2.0.1+6
   # Framework
