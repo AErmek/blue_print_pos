@@ -69,18 +69,23 @@ class BluePrintPos {
           return bluetoothDevice.id == _bluetoothDeviceIOS?.id;
         });
         if (deviceConnectedIndex < 0) {
-          await _bluetoothDeviceIOS?.connect();
+          await _bluetoothDeviceIOS?.connect(timeout: timeout);
         }
       }
 
       _isConnected = true;
-      selectedDevice?.connected = true;
-      return Future<ConnectionStatus>.value(ConnectionStatus.connected);
+      return ConnectionStatus.connected;
     } on Exception catch (error) {
-      print('$runtimeType - Error $error');
+      print('connect: $runtimeType - Error $error');
+      final String errorText = error.toString();
+
+      if (errorText.contains('already connected')) {
+        _isConnected = true;
+        return ConnectionStatus.connected;
+      }
+
       _isConnected = false;
-      selectedDevice?.connected = false;
-      return Future<ConnectionStatus>.value(ConnectionStatus.timeout);
+      return ConnectionStatus.timeout;
     }
   }
 
@@ -88,14 +93,16 @@ class BluePrintPos {
   Future<ConnectionStatus> disconnect({
     Duration timeout = const Duration(seconds: 5),
   }) async {
-    if (Platform.isAndroid) {
-      if (await _bluetoothAndroid?.isConnected ?? false) {
+    try {
+      if (Platform.isAndroid) {
         await _bluetoothAndroid?.disconnect();
+        _isConnected = false;
+      } else if (Platform.isIOS) {
+        await _bluetoothDeviceIOS?.disconnect();
+        _isConnected = false;
       }
-      _isConnected = false;
-    } else if (Platform.isIOS) {
-      await _bluetoothDeviceIOS?.disconnect();
-      _isConnected = false;
+    } on Exception catch (error) {
+      print('disconnect: $runtimeType - Error $error');
     }
 
     return ConnectionStatus.disconnect;
