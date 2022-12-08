@@ -132,4 +132,14 @@ class BluePrintPos {
       print('$runtimeType - Error $error');
     }
   }
+
+  Future<bool?> get isOn async {
+    if (Platform.isAndroid) {
+      return await _bluetoothAndroid?.isOn;
+    } else if (Platform.isIOS) {
+      return await _bluetoothIOS?.isOn;
+    }
+
+    throw UnsupportedError('Unsupported platform');
+  }
 }
